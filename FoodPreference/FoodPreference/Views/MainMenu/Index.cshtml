@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+  //  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container" style="background-image:url(../../Content/images/backImage.jpg);">
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-6">
+                <span style="font-size:80px;color:#ffffff;font-style:oblique;font-weight:bold">Sathi</span>
+                <p class="lead" style="font-size:60px;color:#8af3f3;font-weight:bold">Food Center</p>
+            </div>
+        </div>
+    </div>
+    <div class="bs-docs-section" style="height:694px">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bs-component">
+
+                    <div class="panel panel-primary">
+
+                            <div class="panel-heading">
+
+
+                                <h3 class="panel-title" style="height:100px;text-align:center;font-size:100px;"><a href='@Url.Action("StaffMenu", "MainMenu",new {@class="panel-heading" })'>Staff</a></h3>
+
+                            </div>
+
+                            <div class="panel-body" style="height:60px;text-align:center;font-size:30px;font-weight:bold">
+                                Staff Service
+                            </div>
+</div>
+
+
+
+
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <div class="bs-component">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" style="height:100px;text-align:center;font-size:100px">Customers</h3>
+                        </div>
+                        <div class="panel-body" style="height:60px;text-align:center;font-size:30px;font-weight:bold">
+                            Self Service For Customers
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

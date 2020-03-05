@@ -19,7 +19,9 @@ namespace FoodPreference.Models
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+
     {
+        public DbSet<Customer> Customer { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
