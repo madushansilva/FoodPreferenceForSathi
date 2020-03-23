@@ -22,8 +22,8 @@ namespace FoodPreference.Controllers.Api
 
         public IHttpActionResult GetCustomer()
         {
-            var customer = _context.Customer.ToList();
-            return Ok(customer);
+            var customerInDb = _context.Customer.ToList();
+            return Ok(customerInDb);
         }
 
 

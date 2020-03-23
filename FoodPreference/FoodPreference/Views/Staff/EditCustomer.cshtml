@@ -1,0 +1,54 @@
+﻿@model  FoodPreference.ViewModel.StaffViewModel
+@{
+    ViewBag.Title = "EditCustomer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*@if (Model.Customer == null)
+{
+    <h2>Add New Customer</h2>
+}
+else
+{
+    <h2>Edit Customer</h2>
+
+}*@
+
+
+
+@using (Html.BeginForm("SaveCustomer", "Staff"))
+{
+    @Html.ValidationSummary()
+
+<div class="form-group">
+@Html.LabelFor(m => m.Name)
+@Html.TextBoxFor(m=>m.Name, new { @class = "form-control" })
+@Html.ValidationMessageFor(m=>m.Name)
+
+
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(m => m.Ic)
+    @Html.TextBoxFor(m => m.Ic, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Ic)
+
+
+</div>
+
+
+<div class="form-group">
+    @Html.LabelFor(m => m.Contact)
+    @Html.TextBoxFor(m => m.Contact, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Contact)
+
+
+</div>
+
+
+@Html.HiddenFor(m=>m.Id)
+<button type="submit" class="btn btn-primary">Save</button>
+}
+
+
+

@@ -221,6 +221,14 @@
     <Compile Include="Migrations\202003050515420_initialStage.Designer.cs">
       <DependentUpon>202003050515420_initialStage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003220558155_newchange.cs" />
+    <Compile Include="Migrations\202003220558155_newchange.Designer.cs">
+      <DependentUpon>202003220558155_newchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003221001084_secontime.cs" />
+    <Compile Include="Migrations\202003221001084_secontime.Designer.cs">
+      <DependentUpon>202003221001084_secontime.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -228,6 +236,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\StaffViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -431,7 +440,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -468,6 +479,7 @@
     <Content Include="Views\MainMenu\Index.cshtml" />
     <Content Include="Views\Staff\Index.cshtml" />
     <Content Include="Views\Staff\LoadCustomers.cshtml" />
+    <Content Include="Views\Staff\EditCustomer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -483,6 +495,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202003050515420_initialStage.resx">
       <DependentUpon>202003050515420_initialStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003220558155_newchange.resx">
+      <DependentUpon>202003220558155_newchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003221001084_secontime.resx">
+      <DependentUpon>202003221001084_secontime.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
